@@ -38,8 +38,21 @@ Please perform the following steps in the environment where you are experiencing
     ```bash
     env | grep -E "^GEMINI_|^GOOGLE_|^NODE_"
     ```
+8. **OpenTelemetry Log Collection:** Run the following command and save the complete output:
+   *   Ask the customer to configure Gemini CLI to log telemetry to a local file. They should add/update their ~/.gemini/settings.json like this:
+     
+    ```json
+    {
+  "telemetry": {
+    "enabled": true,
+    "target": "local",
+    "outfile": ".gemini/telemetry.log",
+    "logPrompts": true
+  }
+}
+    ```
 
-8.  **CRITICAL STEP: Review and REDACT Sensitive Information:**
+10.  **CRITICAL STEP: Review and REDACT Sensitive Information:**
     Before sending any of the collected information, you **MUST** carefully review all text and file contents and remove/redact:
     *   Any API keys, passwords, authentication tokens, or other credentials.
     *   Secret keys or private keys.
@@ -49,6 +62,6 @@ Please perform the following steps in the environment where you are experiencing
     *   Any other proprietary or sensitive data.
     *   **When in doubt, redact it.**
 
-9.  **Secure Submission:** Paste the redacted information into our secure Google Cloud Support case. Please clearly label each section (e.g., "Output of `gemini extensions list`", "Contents of `settings.json`", etc.).
+11.  **Secure Submission:** Paste the redacted information into our secure Google Cloud Support case. Please clearly label each section (e.g., "Output of `gemini extensions list`", "Contents of `settings.json`", etc.).
 
 Providing this information will greatly help us understand your configuration and diagnose the cause of the excessive requests and connection requests leading to quota issues.
