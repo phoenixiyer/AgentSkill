@@ -4,11 +4,11 @@
 
 This repository contains specialized **Gemini CLI Skills** designed to help developers and SREs identify the "Smoking Gun" behind unexpected token consumption. 
 
-In many cases, quota exhaustion is not caused by the user's primary prompt, but by the **Prompt Amplification Factor (PAF)**—where internal agent reasoning, failing MCP servers, or massive instruction bloat trigger multiple hidden backend requests.
+In many cases, quota exhaustion is not caused by the user's primary prompt, but by the **Prompt Amplification Factor (PAF)** where internal agent reasoning, failing MCP servers, or massive instruction bloat trigger multiple hidden backend requests.
 
 ---
 
-## 🔍 Included Skills
+## Included Skills
 
 ### 1. `sys-audit`
 A lightweight diagnostic tool to verify the environment state.
@@ -22,9 +22,12 @@ A deep-state diagnostic tool designed to bypass "Blocked Call" loops and tool-ha
 *   **MCP Health Check:** Directly pings MCP servers (e.g., `gitlab`, `google-maps`) to identify retry-loops caused by connection failures.
 *   **Auto-Redaction:** Uses `sed` logic to mask `AIza...` API keys and sensitive environment variables in the generated report.
 
+### 3. `Manual-Steps`
+If the CLI is hanging or you want to avoid further API costs, follow the steps in manual diagnostic guide.
+
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Installation
 1.  Ensure you are on the latest version of the Gemini CLI:
@@ -49,7 +52,7 @@ Help me collect the forensic audit or collect diagnostic
 
 ---
 
-## 🛡️ Safe Harbor & Disclaimer
+## Safe Harbor & Disclaimer
 
 > [!IMPORTANT]
 > **Experimental Status:** The skills and scripts provided in this repository are **experimental** and are intended for diagnostic and troubleshooting purposes only.
@@ -62,5 +65,5 @@ Help me collect the forensic audit or collect diagnostic
 
 ---
 
-## 💡 Troubleshooting Insights
+## Troubleshooting Insights
 If the `forensic-audit` skill hangs, it is likely because your `LocalAgentExecutor` is blocking the shell tools. To bypass this, manually run the shell commands found inside the `SKILL.md` directly in your terminal. This will generate the same report with **zero** API cost and no risk of "Agent Loops."
