@@ -52,7 +52,7 @@ Help me collect the forensic audit or collect diagnostic
 
 ---
 
-## Safe Harbor & Disclaimer
+## Disclaimer
 
 > [!IMPORTANT]
 > **Experimental Status:** The skills and scripts provided in this repository are **experimental** and are intended for diagnostic and troubleshooting purposes on nonprod/testing environments only.
