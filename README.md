@@ -55,7 +55,7 @@ Help me collect the forensic audit or collect diagnostic
 ## Safe Harbor & Disclaimer
 
 > [!IMPORTANT]
-> **Experimental Status:** The skills and scripts provided in this repository are **experimental** and are intended for diagnostic and troubleshooting purposes only.
+> **Experimental Status:** The skills and scripts provided in this repository are **experimental** and are intended for diagnostic and troubleshooting purposes on nonprod/testing environments only.
 >
 > **Not an Official Product:** This is **not** an official Google product. These tools are provided "as-is" without any express or implied warranties. Use of these scripts is at the user’s own risk. 
 >
