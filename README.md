@@ -10,7 +10,7 @@ In many cases, quota exhaustion is not caused by the user's primary prompt, but 
 
 ## Included Skills
 
-###  0 Identity & Project Verification
+### 0. `Identity & Project Verification`
 Before collecting logs, ensure the CLI is pointing to the correct billing project. If this returns empty, the user is likely hitting the Free Tier wall:
 
  ```bash
