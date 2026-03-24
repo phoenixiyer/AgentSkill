@@ -10,6 +10,13 @@ In many cases, quota exhaustion is not caused by the user's primary prompt, but 
 
 ## Included Skills
 
+###  0 Identity & Project Verification
+Before collecting logs, ensure the CLI is pointing to the correct billing project. If this returns empty, the user is likely hitting the Free Tier wall:
+
+ ```bash
+ echo $GOOGLE_CLOUD_PROJECT
+```
+
 ### 1. `sys-audit`
 A lightweight diagnostic tool to verify the environment state.
 *   **Tier Verification:** Detects if the user is on the "Individual" (Free) vs. "Enterprise/Standard" tier.
