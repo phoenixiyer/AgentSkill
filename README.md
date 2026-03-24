@@ -41,6 +41,11 @@ To generate a comprehensive diagnostic report (`report.md`) in your current dire
 ```bash
 gemini --skill forensic-audit
 ```
+OR
+in Gemini CLI Terminal
+```bash
+Help me collect the forensic audit or collect diagnostic
+```
 
 ---
 
